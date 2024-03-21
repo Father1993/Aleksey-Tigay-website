@@ -4,7 +4,7 @@ import image2 from '../../assets/image2.png'
 import image3 from '../../assets/image3.png'
 import image4 from '../../assets/image4.png'
 import tick from '../../assets/tick.png'
-import nb from '../../assets/nb.png'
+import fitnessFormula from '../../assets/fitnessFormula.png'
 import adidas from '../../assets/adidas.png'
 import nike from '../../assets/nike.png'
 
@@ -26,15 +26,17 @@ const Reasons = () => {
                 <div className="details-r">
                     <div>
                         <img src={tick} alt="Галочка 1"></img>
-                        <span>БОЛЕЕ 50+ ДОВОЛЬНЫХ УЧЕНИКОВ</span>
+                        <span>БОЛЕЕ 50+ ДОВОЛЬНЫХ КЛИЕНТОВ</span>
                     </div>
                     <div>
                         <img src={tick} alt="Галочка 2" />
-                        <span>ТРЕНИРУЙТЕСЬ УМНЕЕ И БЫСТРЕЕ, ЧЕМ РАНЬШЕ</span>
+                        <span>
+                            ДОСТИГАЙТЕ РЕЗУЛЬТАТОВ УМНЕЕ И БЫСТРЕЕ, ЧЕМ РАНЬШЕ
+                        </span>
                     </div>
                     <div>
                         <img src={tick} alt="Галочка 3" />
-                        <span>1 БЕСПЛАТНАЯ ПРОГРАММА ДЛЯ НОВОГО УЧАСТНИКА</span>
+                        <span>1 БЕСПЛАТНАЯ ПРОГРАММА ДЛЯ НОВОГО КЛИЕНТА</span>
                     </div>
                     <div>
                         <img src={tick} alt="Галочка 4" />
@@ -50,7 +52,7 @@ const Reasons = () => {
                     МОИ ПАРТНЁРЫ
                 </span>
                 <div className="partners">
-                    <img src={nb} alt="New Balance" />
+                    <img src={fitnessFormula} alt="Fitness Formula" />
                     <img src={adidas} alt="Adidas" />
                     <img src={nike} alt="Nike" />
                 </div>

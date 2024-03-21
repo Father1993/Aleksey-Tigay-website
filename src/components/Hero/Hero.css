@@ -51,7 +51,8 @@
     font-weight: 200;
     text-transform: none;
     letter-spacing: 1px;
-    width: 80%;
+    width: 70%;
+    z-index: 1;
 }
 
 .figures {
@@ -67,6 +68,7 @@
 .figures > div > span:nth-of-type(1) {
     color: white;
     font-size: 2rem;
+    margin: 0 auto;
 }
 
 .figures > div > span:nth-of-type(2) {
@@ -142,6 +144,10 @@
     width: 15rem;
 }
 
+.hero-text-info {
+    font-size: 1.2rem;
+}
+
 .calories {
     display: flex;
     gap: 2rem;
@@ -151,7 +157,7 @@
     width: fit-content;
     position: absolute;
     top: 32rem;
-    right: 40rem;
+    right: 38rem;
 }
 
 .calories > img {

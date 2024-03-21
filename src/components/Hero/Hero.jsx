@@ -13,7 +13,7 @@ const Hero = () => {
                 {/* the best ad */}
                 <div className="the-best-ad">
                     <div></div>
-                    <span>Лучший тренер в городе. Проверь сам!</span>
+                    <span>Лучший фитнес тренер. Проверь сам!</span>
                 </div>
                 {/* hero heading */}
                 <div className="hero-text">
@@ -25,7 +25,7 @@ const Hero = () => {
                         <span>Идеальное тело</span>
                     </div>
                     <div>
-                        <span>
+                        <span className="hero-text-info">
                             Я помогу вам сформировать и построить идеальное
                             тело, жить и наслаждаться полной жизнью.
                         </span>
@@ -34,15 +34,15 @@ const Hero = () => {
                 {/* figures */}
                 <div className="figures">
                     <div>
-                        <span>+60</span>
-                        <span>учеников</span>
+                        <span>60+</span>
+                        <span>клиентов</span>
                     </div>
                     <div>
-                        <span>+150</span>
+                        <span>150+</span>
                         <span>людей уже попробовали на себе</span>
                     </div>
                     <div>
-                        <span>+50</span>
+                        <span>50+</span>
                         <span>программ тренировок</span>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const Hero = () => {
                 <button className="btn">Зайти сейчас</button>
 
                 <div className="heart-rate">
-                    <img src={Heart} alt="Heart" />
+                    <img src={Heart} alt="Иконка сердца" />
                     <span>Пульс</span>
                     <span>117 bpm</span>
                 </div>
@@ -65,12 +65,12 @@ const Hero = () => {
                 {/* hero images */}
                 <img
                     src={hero_image}
-                    alt="hero_images"
+                    alt="Алексей Тигай"
                     className="hero-image"
                 />
                 <img
                     src={hero_image_back}
-                    alt="hero images background"
+                    alt="Полоски на заднем фоне"
                     className="hero-image-back"
                 />
 
