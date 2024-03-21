@@ -18,7 +18,7 @@ const Testimonials = () => {
                 <span style={{ color: 'white' }}>
                     <span className="left-t__name">
                         {testimonialsData[selected].name}
-                    </span>
+                    </span>{' '}
                     - {testimonialsData[selected].status}
                 </span>
             </div>
