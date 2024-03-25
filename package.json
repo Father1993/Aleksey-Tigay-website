@@ -2,6 +2,7 @@
     "name": "AlekseyTigay",
     "version": "0.1.0",
     "private": true,
+    "main": "index.js",
     "dependencies": {
         "@emailjs/browser": "^3.12.1",
         "@testing-library/jest-dom": "^5.16.4",
@@ -33,7 +34,7 @@
     },
     "browserslist": {
         "production": [
-            ">1%",
+            ">0.3%",
             "not dead",
             "not op_mini all"
         ],
