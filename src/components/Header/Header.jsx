@@ -61,7 +61,7 @@ const Header = () => {
                             to="plans"
                             smooth={true}
                         >
-                            Планы
+                            Планы тренировок
                         </Link>
                     </li>
                     <li>
