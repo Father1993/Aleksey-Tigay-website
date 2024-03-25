@@ -1,5 +1,4 @@
 import { useCallback } from 'react'
-import { Link } from 'react-scroll'
 import { plansData } from '../../data/plansData.js'
 import whiteTick from '../../assets/whiteTick.png'
 import './Plans.css'

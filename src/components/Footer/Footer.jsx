@@ -1,5 +1,4 @@
 import { useCallback } from 'react'
-import { Link } from 'react-scroll'
 import { FaTelegram } from 'react-icons/fa'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { MdEmail } from 'react-icons/md'
