@@ -51,7 +51,7 @@
 }
 
 .btn-j {
-    background-color: var(--orange);
+    background-color: var(--orange) !important;
     color: white;
 }
 

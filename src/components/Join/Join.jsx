@@ -46,7 +46,9 @@ const Join = () => {
                         name="user_email"
                         placeholder="Введите свой Email"
                     />
-                    <button className="btn btn-j">Попробовать!</button>
+                    <button className="btn btn-j" onClick={sendEmail}>
+                        Попробовать!
+                    </button>
                 </form>
             </div>
         </div>
