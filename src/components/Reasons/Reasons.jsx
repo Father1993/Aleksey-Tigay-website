@@ -1,12 +1,11 @@
 import './Reasons.css'
-import image1 from '../../assets/image1.png'
-import image2 from '../../assets/image2.png'
-import image3 from '../../assets/image3.png'
-import image4 from '../../assets/image4.png'
+import image1 from '../../assets/image1.jpg'
+import image2 from '../../assets/image2.jpg'
+import image3 from '../../assets/image3.jpg'
+import image4 from '../../assets/image4.jpg'
 import tick from '../../assets/tick.png'
 import fitnessFormula from '../../assets/fitnessFormula.png'
-import adidas from '../../assets/adidas.png'
-import nike from '../../assets/nike.png'
+import MkSport from '../../assets/mk-sport.png'
 
 const Reasons = () => {
     return (
@@ -26,21 +25,36 @@ const Reasons = () => {
                 <div className="details-r">
                     <div>
                         <img src={tick} alt="Галочка 1"></img>
-                        <span>БОЛЕЕ 50+ ДОВОЛЬНЫХ КЛИЕНТОВ</span>
+                        <span>БОЛЕЕ 100+ ДОВОЛЬНЫХ КЛИЕНТОВ</span>
+                    </div>
+                    <div>
+                        <img src={tick} alt="Галочка 4" />
+                        <span>Мастер спорта международного класса</span>
+                    </div>
+                    <div>
+                        <img src={tick} alt="Галочка 4" />
+                        <span>
+                            Абсолютный чемпион дальнего востока по пауэрлифтингу
+                        </span>
+                    </div>
+                    <div>
+                        <img src={tick} alt="Галочка 4" />
+                        <span>
+                            Чемпион дальнего востока по силовому экстриму
+                        </span>
+                    </div>
+                    <div>
+                        <img src={tick} alt="Галочка 3" />
+                        <span>
+                            Воспитал трёх мастеров спорта, 5 кмс и более 10
+                            разрядников
+                        </span>
                     </div>
                     <div>
                         <img src={tick} alt="Галочка 2" />
                         <span>
                             ДОСТИГАЙТЕ РЕЗУЛЬТАТОВ УМНЕЕ И БЫСТРЕЕ, ЧЕМ РАНЬШЕ
                         </span>
-                    </div>
-                    <div>
-                        <img src={tick} alt="Галочка 3" />
-                        <span>1 БЕСПЛАТНАЯ ПРОГРАММА ДЛЯ НОВОГО КЛИЕНТА</span>
-                    </div>
-                    <div>
-                        <img src={tick} alt="Галочка 4" />
-                        <span>НАДЕЖНЫЕ ПАРТНЕРЫ</span>
                     </div>
                 </div>
                 <span
@@ -52,9 +66,8 @@ const Reasons = () => {
                     МОИ ПАРТНЁРЫ
                 </span>
                 <div className="partners">
-                    <img src={fitnessFormula} alt="Fitness Formula" />
-                    <img src={adidas} alt="Adidas" />
-                    <img src={nike} alt="Nike" />
+                    <img src={fitnessFormula} alt="Фитнес формула" />
+                    <img src={MkSport} alt="МК-СПОРТ" />
                 </div>
             </div>
         </div>

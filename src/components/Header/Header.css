@@ -34,3 +34,22 @@
     color: white;
     text-overflow: inherit;
 }
+
+@media screen and (max-width: 768px) {
+    .logo {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .header > :nth-child(2) {
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+}

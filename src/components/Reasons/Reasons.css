@@ -17,9 +17,10 @@
 }
 
 .left-r > :nth-child(1) {
-    width: 30rem;
+    margin-left: 10rem;
+    width: 10rem;
     grid-row: 1/3;
-    height: 28rem;
+    height: 29.4rem;
 }
 
 .left-r > :nth-child(2) {
@@ -35,6 +36,7 @@
 }
 
 .left-r > :nth-child(4) {
+    margin-right: 12rem;
     width: 10rem;
     height: 11.2rem;
     grid-row: 2;
@@ -51,6 +53,7 @@
 .right-r > span {
     font-weight: bold;
     color: var(--orange);
+    font-size: 2rem;
 }
 
 .right-r > div {
@@ -86,10 +89,60 @@
 }
 
 .partners > img:nth-child(1) {
-    width: 10rem;
+    width: 9rem;
+    height: 4rem;
+    margin-top: 7px;
 }
 
-.partners > img:nth-child(3) {
-    height: 2rem;
-    margin-top: 15px;
+.partners > img:nth-child(2) {
+    width: 9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .Reasons {
+        flex-direction: column;
+    }
+
+    .right-r > span {
+        font-size: medium;
+    }
+
+    .right-r > div {
+        font-size: xx-large;
+    }
+
+    .partners {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-r {
+        grid-auto-rows: auto;
+        overflow: hidden;
+    }
+
+    .left-r > :nth-child(1) {
+        margin: 0;
+        width: 6rem;
+        height: 17rem;
+    }
+
+    .left-r > :nth-child(2) {
+        height: 10rem;
+        width: 15rem;
+    }
+
+    .left-r > :nth-child(3) {
+        width: 7rem;
+        height: 6rem;
+    }
+
+    .left-r > :nth-child(4) {
+        width: 7rem;
+        height: 6rem;
+    }
+
+    .right-r > span {
+        margin-top: 50px;
+    }
 }

@@ -1,10 +1,18 @@
-import './Plans.css'
+import { useCallback } from 'react'
+import { Link } from 'react-scroll'
 import { plansData } from '../../data/plansData.js'
 import whiteTick from '../../assets/whiteTick.png'
+import './Plans.css'
 
 const Plans = () => {
+    const handleTelegramClick = useCallback(() => {
+        window.open('https://t.me/Aleksey_Tigay', '_blank')
+    }, [])
+
     return (
         <div className="plans-container">
+            <div className="blur plans-blur-1"></div>
+            <div className="blur plans-blur-2"></div>
             <div className="programs-header" style={{ gap: '2rem' }}>
                 <span className="stroke-text">ГОТОВЫ НАЧАТЬ</span>
                 <span>СВОЮ ТРАНСФОРМАЦИЮ</span>
@@ -13,7 +21,7 @@ const Plans = () => {
 
             {/* plans card */}
 
-            <div className="plans">
+            <div className="plans" id="plans">
                 {plansData.map((plan, i) => (
                     <div className="plan" key={i}>
                         {plan.icon}
@@ -22,7 +30,7 @@ const Plans = () => {
 
                         <div className="features">
                             {plan.features.map((feature, i) => (
-                                <div className="feature">
+                                <div className="feature" key={i}>
                                     <img
                                         src={whiteTick}
                                         alt="Иконки плана тренировок"
@@ -34,7 +42,9 @@ const Plans = () => {
                         <div>
                             <span>Еще больше преимуществ -></span>
                         </div>
-                        <button className="btn">Смотреть</button>
+                        <button className="btn" onClick={handleTelegramClick}>
+                            Узнать детали
+                        </button>
                     </div>
                 ))}
             </div>
