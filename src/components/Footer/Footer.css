@@ -27,6 +27,12 @@
     transition: transform 0.2s ease-in-out;
 }
 
+.youtube-channel {
+    cursor: pointer;
+    transition: transform 0.2 ease-in-out;
+    width: 55px;
+}
+
 .whatsapp-icon {
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -39,7 +45,8 @@
 
 .email-icon:hover,
 .whatsapp-icon:hover,
-.telegram-icon:hover {
+.telegram-icon:hover,
+.youtube-channel:hover {
     transform: scale(1.1);
     color: var(--orange);
 }

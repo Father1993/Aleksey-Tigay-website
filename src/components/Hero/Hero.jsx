@@ -55,7 +55,7 @@ const Hero = () => {
                                 end={40}
                                 start={15}
                                 delay="4"
-                                preFix="+"
+                                postFix="+"
                             />
                         </span>
                         <span>клиентов</span>
@@ -66,7 +66,7 @@ const Hero = () => {
                                 end={100}
                                 start={77}
                                 delay="4"
-                                preFix="+"
+                                postFix="+"
                             />
                         </span>
                         <span>людей уже попробовали на себе</span>
@@ -77,7 +77,7 @@ const Hero = () => {
                                 end={30}
                                 start={11}
                                 delay="4"
-                                preFix="+"
+                                postFix="+"
                             />
                         </span>
                         <span>программ тренировок</span>
@@ -104,14 +104,13 @@ const Hero = () => {
                 </button>
 
                 <motion.div
-                    initial={{ right: '-1rem' }}
-                    whileInView={{ right: '8rem' }}
+                    whileInView={{ left: mobile ? '2.5rem' : '10rem' }}
                     transition={{ ...transition }}
                     className="heart-rate"
                 >
                     <img src={Heart} alt="Иконка сердца" />
                     <span>Пульс</span>
-                    <span>117 bpm</span>
+                    <span>128 bpm</span>
                 </motion.div>
 
                 {/* hero images */}
@@ -131,15 +130,21 @@ const Hero = () => {
 
                 {/* calories */}
                 <motion.div
-                    initial={{ right: '60rem' }}
-                    whileInView={{ right: '42rem' }}
+                    initial={{
+                        left: mobile ? '0rem' : '-45rem',
+                        top: mobile ? '4.8rem' : '43.5rem',
+                    }}
+                    whileInView={{
+                        left: mobile ? '5.4rem' : '-35rem',
+                        top: mobile ? '4.8rem' : '43.5rem',
+                    }}
                     transition={{ ...transition }}
                     className="calories"
                 >
                     <img src={Calories} alt="Calories" />
                     <div>
                         <span>Сожжено калорий</span>
-                        <span>220 kcal</span>
+                        <span>1220 kcal</span>
                     </div>
                 </motion.div>
             </div>

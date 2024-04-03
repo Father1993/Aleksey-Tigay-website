@@ -1,6 +1,7 @@
-import './Programs.css'
+import { Link } from 'react-scroll'
 import { programsData } from '../../data/programsData'
 import RightArrow from '../../assets/rightArrow.png'
+import './Programs.css'
 
 const Programs = () => {
     return (
@@ -20,7 +21,11 @@ const Programs = () => {
                         <span>{program.heading}</span>
                         <span>{program.details}</span>
                         <div className="join-now">
-                            <span>Присоединиться сейчас</span>
+                            <span>
+                                <Link to="join-us" smooth={true}>
+                                    Присоединиться сейчас
+                                </Link>
+                            </span>
                             <img src={RightArrow} alt="Right arrow" />
                         </div>
                     </div>

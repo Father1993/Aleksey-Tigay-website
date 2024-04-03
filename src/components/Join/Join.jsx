@@ -1,23 +1,43 @@
-import { useRef } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import './Join.css'
 
 const Join = () => {
+    useEffect(() => emailjs.init('H0rJDSU8dHqX780Ri'), [])
+
     const form = useRef()
+
+    const [emailStatus, setEmailStatus] = useState('')
+
+    const validateEmail = (email) => {
+        let re =
+            /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu
+        return re.test(email)
+    }
 
     const sendEmail = (e) => {
         e.preventDefault()
 
+        const email = form.current.elements.user_email.value
+        if (!validateEmail(email)) {
+            setEmailStatus('Некорректный E-mail !!!')
+            return
+        }
+
         emailjs
-            .sendForm('service_wtnci4c', 'template_nyjjyl4', form.current, {
-                publicKey: 'QlnHU5eUYzTWAA9kN',
-            })
+            .sendForm(
+                'service_kpr8soo',
+                'template_cer27ji',
+                form.current,
+                'H0rJDSU8dHqX780Ri'
+            )
             .then(
-                () => {
-                    console.log('SUCCESS!')
+                (result) => {
+                    setEmailStatus('Сообщение доставлено!')
                 },
                 (error) => {
-                    console.log('FAILED...', error.text)
+                    console.log(error)
+                    setEmailStatus('Ошибка при отправке!')
                 }
             )
     }
@@ -44,12 +64,19 @@ const Join = () => {
                     <input
                         type="email"
                         name="user_email"
-                        placeholder="Введите свой Email"
+                        placeholder="Email"
+                        required
                     />
-                    <button className="btn btn-j" onClick={sendEmail}>
+                    <button
+                        type="submit"
+                        value="Send"
+                        className="btn btn-j"
+                        onClick={sendEmail}
+                    >
                         Попробовать!
                     </button>
                 </form>
+                <p className="error-message">{emailStatus}</p>
             </div>
         </div>
     )

@@ -2,12 +2,17 @@ import { useCallback } from 'react'
 import { FaTelegram } from 'react-icons/fa'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { MdEmail } from 'react-icons/md'
+import { PiYoutubeLogoFill } from 'react-icons/pi'
 import Logo from '../../assets/logo.png'
 import './Footer.css'
 
 const Footer = () => {
     const handleTelegramLink = useCallback(() => {
         window.open('https://t.me/Aleksey_Tigay', '_blank')
+    }, [])
+
+    const handleYoutubeLink = useCallback(() => {
+        window.open('https://www.youtube.com/@AlekseyTigay', '_blank')
     }, [])
 
     const handleEmailLink = useCallback(() => {
@@ -23,6 +28,12 @@ const Footer = () => {
             <hr />
             <div className="footer">
                 <div className="social-links">
+                    <PiYoutubeLogoFill
+                        className="youtube-channel"
+                        size={50}
+                        onClick={handleYoutubeLink}
+                    />
+
                     <FaTelegram
                         className="telegram-icon"
                         size={50}

@@ -29,7 +29,8 @@
 .right-j {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    flex-direction: column;
 }
 
 .email-container {
@@ -48,6 +49,7 @@
 
 ::placeholder {
     color: var(--lightgray);
+    text-align: center;
 }
 
 .btn-j {
@@ -68,5 +70,8 @@
 
     .right-j {
         padding: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
