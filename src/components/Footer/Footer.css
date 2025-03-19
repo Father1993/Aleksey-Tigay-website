@@ -78,3 +78,45 @@
     filter: blur(200px);
     background: rgb(255, 115, 0);
 }
+
+.legal-documents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.legal-documents p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.legal-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.legal-links span {
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--orange);
+    transition: all 0.3s;
+}
+
+.legal-links span:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+    .legal-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

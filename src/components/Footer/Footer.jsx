@@ -23,6 +23,10 @@ const Footer = () => {
         window.open('https://wa.me/79990800696', '_blank')
     }, [])
 
+    const handleDocumentLink = useCallback((documentPath) => {
+        window.open(documentPath, '_blank')
+    }, [])
+
     return (
         <div className="Footer-container">
             <hr />
@@ -54,6 +58,34 @@ const Footer = () => {
                     <img src={Logo} alt="Footer logo icon" />
                 </div>
             </div>
+
+            <div className="legal-documents">
+                <p>© 2025 Алексей Тигай. Персональный тренер.</p>
+                <div className="legal-links">
+                    <span
+                        onClick={() =>
+                            handleDocumentLink('/documents/user-agreement.html')
+                        }
+                    >
+                        Пользовательское соглашение
+                    </span>
+                    <span
+                        onClick={() =>
+                            handleDocumentLink('/documents/privacy-policy.html')
+                        }
+                    >
+                        Политика конфиденциальности
+                    </span>
+                    <span
+                        onClick={() =>
+                            handleDocumentLink('/documents/cookie-policy.html')
+                        }
+                    >
+                        Политика использования cookie
+                    </span>
+                </div>
+            </div>
+
             <div className="blur footer-blur-1"></div>
             <div className="blur footer-blur-2"></div>
         </div>
